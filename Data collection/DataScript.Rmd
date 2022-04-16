@@ -1,6 +1,6 @@
 ---
 title: "New York Times (Nexis Uni)"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r}
