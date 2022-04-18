@@ -13,6 +13,11 @@ I thought I could write up here what I've been up to since we last met as its be
   <img src="https://user-images.githubusercontent.com/89010445/163780538-bf7c6709-94a6-402a-819f-200f73ec8681.PNG" alt="Sublime's custom image"/, style="width:800px;">
 </p>
 
-8. Then I requested the html files for all these urls and used NewsPlease to extract the article data and meta data. We get **4035** articles. As we provide NewsPlease with just the urls, I created a new column 'media_name' from this url column in R using the libraries tidyverse and inops. The table below shows the number 
-9. 
+8. Then I requested the html files for all these urls and used NewsPlease to extract the article data and meta data. We get **4035** articles, meaning 700 articles aren't retrieved. We also get 151 articles with NAs on the maintext column. As we provide NewsPlease with just the urls, I created a new column 'media_name' from this url column in R using the libraries tidyverse and inops. I checked articles retrieved per outlet. The table below shows the number of stories we manage to get. We get 0 stories from the Washington Examiner and only 15 from the important outlet The New York Times, but we can also get this data from NexisUni. Interestingly for some reason I dont understand NBC News ends up with more stories that original urls. 10 articles have urls that dont belong to any of the news outlets, bringing the data down to **3874**.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89010445/163788773-e520ce1e-c535-4dde-8f52-654e89adfe5e.PNG" alt="Sublime's custom image"/, style="width:300px;">
+</p>
+
+
+10. 
 
