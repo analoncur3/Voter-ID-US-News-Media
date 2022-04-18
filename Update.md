@@ -21,5 +21,5 @@ I thought I could write up here what I've been up to since we last met as its be
 10. After this initial data gathering I revisited the original table of outlets of interest. We discard the *National Review*  and *Chicago Tribune* because of their limited timeframe and lack of sources retrieved. We discard the *Washington Examiner*, *Wall Street Journal* and *Vox* because of lack of sources found/retrieved. We discard "MSNBC" as it's a TV cable channel providing NBC News coverage. We end up with:
   - Right-wing news media: Fox News, Washington Times, NY Post, Breitbart, Free Beacon and Daily Caller. 
   - Left-wing news media: the Washington Post, the New York Times, CNN, NBC News, USA Today and Huffington Post.
-11. Seeing only 14 *New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools.
+11. Seeing only 14 *New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1119 stories found - which includes duplicates). We combine this data with the mediacloud data, which results in **4513** stories, 2790 from right wing media and 1723 from left wing media.
 
