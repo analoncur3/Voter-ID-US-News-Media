@@ -18,10 +18,14 @@ I thought I could write up here what I've been up to since we last met as its be
   <img src="https://user-images.githubusercontent.com/89010445/163794100-c5ed5741-2f68-48b9-b6c8-608e910b6643.PNG" alt="Sublime's custom image"/, style="width:300px;">
 </p>
 
-10. After this initial data gathering I revisited the original table of outlets of interest. We discard the *National Review*  and *Chicago Tribune* because of their limited timeframe and lack of sources retrieved. We discard the *Washington Examiner*, *Wall Street Journal* and *Vox* because of lack of sources found/retrieved. We discard "MSNBC" as it's a TV cable channel providing NBC News coverage. We end up with:
-  - Right-wing news media: Fox News, Washington Times, NY Post, Breitbart, Free Beacon and Daily Caller. 
-  - Left-wing news media: the Washington Post, the New York Times, CNN, NBC News, USA Today and Huffington Post.
-11. Seeing only 14 *New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1097 stories found - excluding duplicates). We combine this data with the mediacloud data, which results in **4491** stories, 2768 from left wing media and 1723 from right wing media.
+10. After this initial data gathering I revisited the original table of outlets of interest. We discard the *National Review*  and *Chicago Tribune* because of their limited timeframe and lack of sources retrieved. We discard the *Washington Examiner*, *Wall Street Journal* and *Vox* because of lack of sources found/retrieved. We discard *MSNBC* as it's a TV cable channel providing NBC News coverage. We end up with:
+  - Right-wing news media: *Fox News, Washington Times, NY Post, Breitbart, Free Beacon* and *Daily Caller*. 
+  - Left-wing news media: *The Washington Post, The New York Times, CNN, NBC News, USA Today* and *Huffington Post*.
+11. Seeing only 14 *The New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1097 stories found - excluding duplicates). We combine this data with the mediacloud data, which results in **4491** stories, 2768 from left wing media and 1723 from right wing media.
 12. After again removing articles without a date of the NY Times (nexisuni) data, the final corpus ends up being **4485** articles.
-13. I then organised the data by Congress.
+13. I then organised the data by Congress. My initial thoughts after seeing the barplot below is how similar this descriptive data looks compared to Congressional speeches. We can see more left-wing articles about voter ID in the first few congresses, with more and more articles from right-wing media in during more recent congressional sessions.
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/89010445/163989839-5a4a89bd-b3d6-417e-a1bf-2b1823e02985.PNG" alt="Sublime's custom image"/, style="width:400px;">
+</p>
+
 
