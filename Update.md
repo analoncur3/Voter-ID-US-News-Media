@@ -13,7 +13,7 @@ I thought I could write up here what I've been up to since we last met as its be
   <img src="https://user-images.githubusercontent.com/89010445/163780538-bf7c6709-94a6-402a-819f-200f73ec8681.PNG" alt="Sublime's custom image"/, style="width:800px;">
 </p>
 
-8. Then I requested the html files for all these urls and used NewsPlease to extract the article data and meta data. We get **4035** articles, meaning 700 articles aren't retrieved. We also get 151 articles with NAs on the maintext column (mainly from the *National Review*). As we provide NewsPlease with the htmls from just the mediacloud urls, I created a new column 'media_name' and used the libraries tidyverse and inops in R to extract outlet names from the url column. I checked the number of articles retrieved per outlet (see table below). We get 0 stories from the *Washington Examiner* and only 14 from *The New York Times*, but for the latter we can also get this data from NexisUni. Interestingly for some reason I dont understand NBC News and CNN end up with more stories that original urls, I checked the urls and they are indeed from these sources so I dont know why they were tagged differently by the Mediacloud api. 10 articles have urls that dont belong to any of the news outlets, bringing the data down to **3874**.
+8. Then I requested the html files for all these urls and used NewsPlease to extract the article data and meta data. We get **4035** articles, meaning 700 articles aren't retrieved. We also get 151 articles with NAs on the maintext column (mainly from the *National Review*). As we provide NewsPlease with the htmls from just the mediacloud urls, I created a new column 'media_name' and used the libraries tidyverse and inops in R to extract outlet names from the url column. I checked the number of articles retrieved per outlet (see table below). We get 0 stories from the *Washington Examiner* and only 14 from *The New York Times*, which explains the big drop, but thankfully we can also get this data from NexisUni. Interestingly for some reason I dont understand NBC News and CNN end up with more stories that original urls, I checked the urls and they are indeed from these sources so I dont know why they were tagged differently by the Mediacloud api. 10 articles have urls that dont belong to any of the news outlets, bringing the number of documents down to **3874**.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/89010445/163794100-c5ed5741-2f68-48b9-b6c8-608e910b6643.PNG" alt="Sublime's custom image"/, style="width:300px;">
 </p>
@@ -21,12 +21,15 @@ I thought I could write up here what I've been up to since we last met as its be
 10. After this initial data gathering I revisited the original table of outlets of interest. We discard the *National Review*  and *Chicago Tribune* because of their limited timeframe and lack of sources retrieved. We discard the *Washington Examiner*, *Wall Street Journal* and *Vox* because of lack of sources found/retrieved. We discard *MSNBC* as it's a TV cable channel providing NBC News coverage. We end up with:
   - Right-wing news media: *Fox News, Washington Times, NY Post, Breitbart, Free Beacon* and *Daily Caller*. 
   - Left-wing news media: *The Washington Post, The New York Times, CNN, NBC News, USA Today* and *Huffington Post*.
-11. Seeing only 14 *The New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1097 stories found - excluding duplicates). We combine this data with the mediacloud data, which results in **4491** stories, 2768 from left wing media and 1723 from right wing media.
-12. After again removing articles without a date of the NY Times (nexisuni) data, the final corpus ends up being **4485** articles.
-13. I then organised the data by Congress. My initial thoughts after seeing the barplot below is how similar this descriptive data looks compared to Congressional speeches. We can see more left-wing articles about voter ID in the first few congresses, with more and more articles from right-wing media in during more recent congressional sessions.
+11. Seeing only 14 *The New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1097 stories found - excluding duplicates). We combine this data with the mediacloud data, which results in **4491** documents, 2768 from left wing media and 1723 from right wing media.
+12. After again removing articles without a date of the NY Times (nexisuni) data, the final corpus ends up being **4485** documents.
+13. I then sorted the data by Congress. My initial thoughts after seeing the barplot below is how similar this descriptive data looks compared to corpus of Congressional speeches. We can see more left-wing articles about voter ID in the first few congresses, with more and more articles from right-wing media during more recent congressional sessions.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/89010445/163991662-3922664b-d5d7-4d16-8382-1f5f7f245317.PNG" alt="Sublime's custom image"/, style="width:300px;">
 </p>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/89010445/163992071-50345db5-9850-4381-a0bd-2d64d794806c.png" alt="Sublime's custom image"/, style="width:300px;">
 </p>
+
+14. I then tried plotting the articles by day and realised theres 24 articles published before 2013. I think this happened when the articles were retrieved via NewsPlease so I removed these from the corpus, total documents now **4467**.
+15. 
