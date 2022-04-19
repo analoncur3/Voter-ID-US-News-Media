@@ -24,9 +24,9 @@ I thought I could write up here what I've been up to since we last met as its be
 11. Seeing only 14 *The New York Times* stories were collected via NewsPlease, we get the stories via NexisUni using LexisNexisTools (1097 stories found - excluding duplicates). We combine this data with the mediacloud data, which results in **4491** stories, 2768 from left wing media and 1723 from right wing media.
 12. After again removing articles without a date of the NY Times (nexisuni) data, the final corpus ends up being **4485** articles.
 13. I then organised the data by Congress. My initial thoughts after seeing the barplot below is how similar this descriptive data looks compared to Congressional speeches. We can see more left-wing articles about voter ID in the first few congresses, with more and more articles from right-wing media in during more recent congressional sessions.
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/89010445/163991662-3922664b-d5d7-4d16-8382-1f5f7f245317.PNG" width="500" />
-  <img src="https://user-images.githubusercontent.com/89010445/163991665-59431498-e3a5-47d1-ba9a-dc9f2c7e418a.png" width="500" /> 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89010445/163991662-3922664b-d5d7-4d16-8382-1f5f7f245317.PNG" alt="Sublime's custom image"/, style="width:300px;">
 </p>
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89010445/163992071-50345db5-9850-4381-a0bd-2d64d794806c.png" alt="Sublime's custom image"/, style="width:300px;">
+</p>
