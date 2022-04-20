@@ -31,5 +31,5 @@ I thought I could write up here what I've been up to since we last met as its be
   <img src="https://user-images.githubusercontent.com/89010445/163992071-50345db5-9850-4381-a0bd-2d64d794806c.png" alt="Sublime's custom image"/, style="width:300px;">
 </p>
 
-14. I then tried plotting the articles by day and realised theres 24 articles published before 2013. I think this happened when the articles were retrieved via NewsPlease so I removed these from the corpus, total documents now **4467**.
+14. I then tried plotting the articles by time and realised theres 24 articles published before 2013. I think this happened when the articles were retrieved via NewsPlease so I removed these from the corpus, total documents now **4467**.
 15. 
