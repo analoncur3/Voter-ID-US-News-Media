@@ -30,6 +30,10 @@ I thought I could write up here what I've been up to since we last met as its be
 <p align="center">
   <img src="https://user-images.githubusercontent.com/89010445/163992071-50345db5-9850-4381-a0bd-2d64d794806c.png" alt="Sublime's custom image"/, style="width:300px;">
 </p>
+14. I then tried plotting the articles by time and realised theres 24 articles published before 2013. I think this happened when the articles were retrieved via NewsPlease so I removed these from the corpus, total documents now **4467**, with a total of **6371235** words.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/89010445/164226306-ded712f4-92bf-417b-bafe-74b6ece9584f.PNG" alt="Sublime's custom image"/, style="width:300px;">
+</p>
+**THOUGHTS ON DATA SO FAR: until I hear back from Mediacloud about the discrepancy between storycount and retrieved urls I feel a bit uneasy about the data. When emailing with Wai Lam, they said the support team was very helpful when they contacted them last year. If it turns out there's a serious problem with the current database, they might do periodic backups so maybe they could be able to pull the data we need from one of those. We also only got 80% of Washington Post stories through NewsPlease, but we have access to the Washington Post through the UvA, see [here](https://go.gale.com/ps/i.do?p=AONE&u=amst&id=GALE%7C2PST&v=2.1&it=aboutJournal). The stories can only be downloaded one by one though but I checked the html and I think we could potentially scrape it. My thoughts are that, even with these potential data issues, we now have a corpus to play around with. We can always include more data later on and re-run the analysis**
 
-14. I then tried plotting the articles by time and realised theres 24 articles published before 2013. I think this happened when the articles were retrieved via NewsPlease so I removed these from the corpus, total documents now **4467**.
-15. 
+
